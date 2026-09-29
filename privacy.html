@@ -12,41 +12,48 @@
 </head>
 <body>
 <h1>Weerna — Privacy Policy</h1>
-<p><em>Effective date: 24 September 2026</em></p>
+<p><em>Effective date: 29 September 2026</em></p>
 
 <p>Weerna ("the app") is a digital wardrobe and virtual try-on app operated by Daniel Vinojčić ("we", "us"). This policy explains what data the app handles and why.</p>
 
 <h2>Data we collect</h2>
 <ul>
-  <li><strong>Photos you add</strong> — your full-body photo and photos of your clothes. These are the core of the service: they are stored privately and used to catalogue your wardrobe and generate try-on images of you wearing your own clothes.</li>
-  <li><strong>Generated images</strong> — the try-on renders created for you.</li>
-  <li><strong>Wardrobe data</strong> — item attributes (category, colour, fabric, warmth and similar), outfits, your ratings of looks, and when you wear an item.</li>
-  <li><strong>Account data</strong> — your email address, or the identifier Apple or Google provides if you sign in with them. It is used only to sign you in and keep your closet available across devices.</li>
-  <li><strong>Approximate location</strong> — to suggest weather-appropriate outfits, the app looks up city-level location from your IP address (via ipapi.co) and fetches the local weather (via Open-Meteo). The app never accesses your device's GPS location, and this approximate location is not stored.</li>
-  <li><strong>Subscription status</strong> — if you subscribe, billing is handled entirely by Apple. We receive only your subscription status (via RevenueCat), never your payment details.</li>
+  <li><strong>Photos you add.</strong> Your full-body photo and photos of your clothes. They are the core of the service: stored privately, and used to catalogue your wardrobe and to make try-on images of you wearing your own clothes.</li>
+  <li><strong>Generated images.</strong> The try-on images made for you.</li>
+  <li><strong>Wardrobe data.</strong> What each piece is (category, colour, fabric, warmth and similar), your outfits, your ratings of looks, and when you wore something.</li>
+  <li><strong>Account data.</strong> Your email address, or the identifier Apple or Google gives us if you sign in with them. Used only to sign you in and keep your closet available across devices.</li>
+  <li><strong>Your city and timezone.</strong> To dress you for the weather, the app looks up your approximate location from your IP address (via ipapi.co). We keep only the city and country it returns, and your phone&#8217;s timezone, so your look can be prepared for your local weather before you wake up. We never store your coordinates or your address, and the app never uses your device&#8217;s GPS. To get the forecast, our server looks up the centre of your city and today&#8217;s weather from Open-Meteo; those coordinates are the city&#8217;s, not yours, and are not kept.</li>
+  <li><strong>When you use the app.</strong> The time you first open the app each day, whether you opened it from our notification, and when you last used it. This decides when your morning look is prepared and when we tell you it is ready, and it is how we stop preparing looks once you have not used the app for a few days. Daily open times are deleted after 60 days.</li>
+  <li><strong>Notifications.</strong> If you allow notifications, we store a push token for your device so we can tell you when your look is ready. Notifications are delivered through Expo&#8217;s push service and Apple or Google. You can turn them off at any time in your device&#8217;s settings, and signing out removes the token from your account.</li>
+  <li><strong>Subscription status.</strong> Billing is handled entirely by Apple. We receive only whether you are subscribed (via RevenueCat), never your payment details.</li>
+  <li><strong>Usage analytics.</strong> Which screens and features are used, sent to PostHog (hosted in the EU) and linked to your account. No session recordings, and never your photos. In the United States this is on unless you turn it off; everywhere else it is off until you say yes. Either way you can change it at any time in Settings &#8594; Share usage data.</li>
 </ul>
 
+<h2>Your look, before you wake up</h2>
+<p>If you subscribe and have used the app in the last three days, we prepare the day&#8217;s outfit and try-on image shortly before the time you usually open the app, using the forecast for your city. If you allowed notifications, we then tell you it is ready. If you have not opened the app for more than three days, nothing is prepared until you come back.</p>
+
 <h2>How photos are processed</h2>
-<p>To tag garments, suggest outfits and generate try-on images, your photos and garment details are processed by AI services acting on our behalf: Google (Gemini API) and fal.ai, which runs the image models, including OpenAI&#8217;s. They are used only to produce your results and are not used to train models on our instruction, shown to other users, sold, or used for advertising.</p>
+<p>To tag garments, suggest outfits and make try-on images, your photos and garment details are processed by AI services acting on our behalf: Google (Gemini API) and fal.ai, which runs the image models, including OpenAI&#8217;s. They are used only to produce your results. They are not used to train models on our instruction, shown to other users, sold, or used for advertising.</p>
 
 <h2>Where data is stored</h2>
-<p>Your data is stored with Supabase (our hosting provider) in access-controlled, private storage. Images are only reachable through short-lived signed links tied to your account.</p>
+<p>Your data is stored with Supabase, our hosting provider, in access-controlled private storage. Images are only reachable through short-lived signed links tied to your account.</p>
 
 <h2>What we don't do</h2>
 <ul>
   <li>We do not sell your data.</li>
   <li>We do not show ads or share your data with advertisers.</li>
+  <li>We do not track your precise location.</li>
   <li>We do not access your camera or photo library without your permission.</li>
 </ul>
 
 <h2>Deleting your data</h2>
-<p>You can permanently delete your account and all associated data — photos, wardrobe, generated images — at any time in the app: <strong>Profile → Delete account &amp; data</strong>. Deletion is immediate. An active subscription is billed by Apple and must be cancelled separately in your Apple account settings.</p>
+<p>You can permanently delete your account and everything connected to it &#8212; photos, wardrobe, generated images, your city, open times and push tokens &#8212; at any time in the app: <strong>Profile &#8594; Delete account &amp; data</strong>. Deletion is immediate. An active subscription is billed by Apple and must be cancelled separately in your Apple account settings.</p>
 
 <h2>Children</h2>
 <p>Weerna is not directed at children under 13, and we do not knowingly collect data from them.</p>
 
 <h2>Changes</h2>
-<p>If this policy changes, the updated version will be posted at this address with a new effective date.</p>
+<p>If this policy changes, the updated version is posted at this address with a new effective date.</p>
 
 <h2>Contact</h2>
 <p>Questions or requests: Daniel Vinojčić, <a href="mailto:vinojko@gmail.com">vinojko@gmail.com</a></p>
